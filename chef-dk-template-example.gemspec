@@ -1,0 +1,72 @@
+# -*- encoding: utf-8 -*-
+# stub: chef-dk-template-example 0.1.0.20150511175519 ruby lib
+
+Gem::Specification.new do |s|
+  s.name = "chef-dk-template-example"
+  s.version = "0.1.0.20150511175519"
+
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
+  s.authors = ["James FitzGibbon"]
+  s.date = "2015-05-12"
+  s.description = "An example plugin for [chefdk-template-plugin](https://rubygems.org/chefdk-template-plugin).\n\nThis plugin makes use of most of the mixins provided by the gem. It only has\na recipe to create a cookbook."
+  s.email = ["james.i.fitzgibbon@nordstrom.com"]
+  s.extra_rdoc_files = ["History.md", "Manifest.txt", "README.md"]
+  s.files = [".rspec", ".rubocop.yml", "Gemfile", "Gemfile.lock", "Guardfile", "History.md", "LICENSE", "Manifest.txt", "README.md", "Rakefile", "chef-dk-template-example.gemspec", "code_generator/files/default/files_default_example_conf", "code_generator/files/default/templates_default_example_conf_erb", "code_generator/libraries/kitchen_helper.rb", "code_generator/metadata.rb", "code_generator/recipes/cookbook.rb", "code_generator/templates/default/Berksfile.erb", "code_generator/templates/default/CHANGELOG_md.erb", "code_generator/templates/default/Gemfile.erb", "code_generator/templates/default/Guardfile.erb", "code_generator/templates/default/README_md.erb", "code_generator/templates/default/Rakefile.erb", "code_generator/templates/default/_kitchen_yml.erb", "code_generator/templates/default/_rspec.erb", "code_generator/templates/default/_rubocop_yml.erb", "code_generator/templates/default/attributes_default_rb.erb", "code_generator/templates/default/metadata_rb.erb", "code_generator/templates/default/recipes_default_rb.erb", "code_generator/templates/default/spec_recipes_default_spec_rb.erb", "code_generator/templates/default/spec_spec_helper_rb.erb", "code_generator/templates/default/test_integration_default_serverspec_recipes_default_spec_rb.erb", "code_generator/templates/default/test_integration_default_serverspec_spec_helper_rb.erb", "lib/chef-dk/template/plugin/example.rb", "spec/lib/chef-dk/template/plugin/example_spec.rb", "spec/spec_helper.rb"]
+  s.homepage = "https://github.com/Nordstrom/chef-dk-template-example"
+  s.licenses = ["apache2"]
+  s.rdoc_options = ["--main", "README.md"]
+  s.rubygems_version = "2.4.4"
+  s.summary = "An example plugin for [chefdk-template-plugin](https://rubygems.org/chefdk-template-plugin)"
+
+  if s.respond_to? :specification_version then
+    s.specification_version = 4
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<chef-dk-template-plugin>, ["~> 0.1"])
+      s.add_development_dependency(%q<rdoc>, ["~> 4.0"])
+      s.add_development_dependency(%q<chef-dk>, ["~> 0.5"])
+      s.add_development_dependency(%q<hoe>, ["~> 3.13"])
+      s.add_development_dependency(%q<hoe-gemspec>, ["~> 1.0"])
+      s.add_development_dependency(%q<rake>, ["~> 10.3"])
+      s.add_development_dependency(%q<rspec>, ["~> 3.1"])
+      s.add_development_dependency(%q<guard>, ["~> 2.12"])
+      s.add_development_dependency(%q<guard-rspec>, ["~> 4.2"])
+      s.add_development_dependency(%q<guard-rake>, ["~> 0.0"])
+      s.add_development_dependency(%q<guard-rubocop>, ["~> 1.2"])
+      s.add_development_dependency(%q<simplecov>, ["~> 0.9"])
+      s.add_development_dependency(%q<simplecov-console>, ["~> 0.2"])
+      s.add_development_dependency(%q<yard>, ["~> 0.8"])
+    else
+      s.add_dependency(%q<chef-dk-template-plugin>, ["~> 0.1"])
+      s.add_dependency(%q<rdoc>, ["~> 4.0"])
+      s.add_dependency(%q<chef-dk>, ["~> 0.5"])
+      s.add_dependency(%q<hoe>, ["~> 3.13"])
+      s.add_dependency(%q<hoe-gemspec>, ["~> 1.0"])
+      s.add_dependency(%q<rake>, ["~> 10.3"])
+      s.add_dependency(%q<rspec>, ["~> 3.1"])
+      s.add_dependency(%q<guard>, ["~> 2.12"])
+      s.add_dependency(%q<guard-rspec>, ["~> 4.2"])
+      s.add_dependency(%q<guard-rake>, ["~> 0.0"])
+      s.add_dependency(%q<guard-rubocop>, ["~> 1.2"])
+      s.add_dependency(%q<simplecov>, ["~> 0.9"])
+      s.add_dependency(%q<simplecov-console>, ["~> 0.2"])
+      s.add_dependency(%q<yard>, ["~> 0.8"])
+    end
+  else
+    s.add_dependency(%q<chef-dk-template-plugin>, ["~> 0.1"])
+    s.add_dependency(%q<rdoc>, ["~> 4.0"])
+    s.add_dependency(%q<chef-dk>, ["~> 0.5"])
+    s.add_dependency(%q<hoe>, ["~> 3.13"])
+    s.add_dependency(%q<hoe-gemspec>, ["~> 1.0"])
+    s.add_dependency(%q<rake>, ["~> 10.3"])
+    s.add_dependency(%q<rspec>, ["~> 3.1"])
+    s.add_dependency(%q<guard>, ["~> 2.12"])
+    s.add_dependency(%q<guard-rspec>, ["~> 4.2"])
+    s.add_dependency(%q<guard-rake>, ["~> 0.0"])
+    s.add_dependency(%q<guard-rubocop>, ["~> 1.2"])
+    s.add_dependency(%q<simplecov>, ["~> 0.9"])
+    s.add_dependency(%q<simplecov-console>, ["~> 0.2"])
+    s.add_dependency(%q<yard>, ["~> 0.8"])
+  end
+end
