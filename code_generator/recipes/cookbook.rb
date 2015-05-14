@@ -1,4 +1,4 @@
-template = ChefDK::Template::Plugin::Example.new(self)
+template = ChefGen::Flavor::Example.new(self)
 template.next_steps = <<END
 
 

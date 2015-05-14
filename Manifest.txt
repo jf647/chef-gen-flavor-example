@@ -1,5 +1,6 @@
 .rspec
 .rubocop.yml
+.travis.yml
 Gemfile
 Gemfile.lock
 Guardfile
@@ -8,7 +9,7 @@ LICENSE
 Manifest.txt
 README.md
 Rakefile
-chef-dk-template-example.gemspec
+chef-gen-flavor-example.gemspec
 code_generator/files/default/files_default_example_conf
 code_generator/files/default/templates_default_example_conf_erb
 code_generator/libraries/kitchen_helper.rb
@@ -30,6 +31,6 @@ code_generator/templates/default/spec_recipes_default_spec_rb.erb
 code_generator/templates/default/spec_spec_helper_rb.erb
 code_generator/templates/default/test_integration_default_serverspec_recipes_default_spec_rb.erb
 code_generator/templates/default/test_integration_default_serverspec_spec_helper_rb.erb
-lib/chef-dk/template/plugin/example.rb
-spec/lib/chef-dk/template/plugin/example_spec.rb
+lib/chef_gen/flavor/example.rb
+spec/lib/chef_gen/flavor/example_spec.rb
 spec/spec_helper.rb

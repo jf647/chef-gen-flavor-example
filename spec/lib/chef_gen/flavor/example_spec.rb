@@ -1,6 +1,6 @@
-require 'chef-dk/template/plugin/example'
+require 'chef_gen/flavor/example'
 
-RSpec.describe ChefDK::Template::Plugin::Example do
+RSpec.describe ChefGen::Flavor::Example do
   before do
     @ctx = double('ChefDK generator context')
     allow(@ctx).to receive(:cookbook_root).and_return('/nonexistent')
@@ -32,7 +32,7 @@ RSpec.describe ChefDK::Template::Plugin::Example do
   ).each do |dirname|
     it "should create the directory #{dirname}" do
       expect(@recipe).to receive(:directory).with(/#{dirname}$/)
-      template = ChefDK::Template::Plugin::Example.new(@recipe)
+      template = ChefGen::Flavor::Example.new(@recipe)
       template.generate
     end
   end
@@ -57,7 +57,7 @@ RSpec.describe ChefDK::Template::Plugin::Example do
   ).each do |filename|
     it "should generate the file #{filename} from a template" do
       expect(@recipe).to receive(:template).with(/#{filename}$/)
-      template = ChefDK::Template::Plugin::Example.new(@recipe)
+      template = ChefGen::Flavor::Example.new(@recipe)
       template.generate
     end
   end
@@ -68,7 +68,7 @@ RSpec.describe ChefDK::Template::Plugin::Example do
   ).each do |filename|
     it "should write the file #{filename}" do
       expect(@recipe).to receive(:cookbook_file).with(/#{filename}$/)
-      template = ChefDK::Template::Plugin::Example.new(@recipe)
+      template = ChefGen::Flavor::Example.new(@recipe)
       template.generate
     end
   end
@@ -76,13 +76,13 @@ RSpec.describe ChefDK::Template::Plugin::Example do
   it 'should write a chefignore and .gitignore' do
     expect(@recipe).to receive(:file).with(/chefignore$/)
     expect(@recipe).to receive(:file).with(/\.gitignore$/)
-    template = ChefDK::Template::Plugin::Example.new(@recipe)
+    template = ChefGen::Flavor::Example.new(@recipe)
     template.generate
   end
 
   it 'should display the actions taken' do
     expect(@recipe).to receive(:ruby_block).with('report_actions_taken')
-    template = ChefDK::Template::Plugin::Example.new(@recipe)
+    template = ChefGen::Flavor::Example.new(@recipe)
     template.generate
   end
 end

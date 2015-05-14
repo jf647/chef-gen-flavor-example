@@ -1,33 +1,33 @@
-# chefdk-template-example
+# chef-gen-flavor-example
 
-* home :: https://github.com/Nordstrom/chef-dk-template-example
+* home :: https://github.com/Nordstrom/chef-gen-flavor-example
 * license :: [Apache2](http://www.apache.org/licenses/LICENSE-2.0)
-* gem version :: [![Gem Version](https://badge.fury.io/rb/chef-dk-template-example.png)](http://badge.fury.io/rb/chef-dk-template-example)
-* build status :: [![Build Status](https://travis-ci.org/Nordstrom/chef-dk-template-example.png?branch=master)](https://travis-ci.org/Nordstrom/chef-dk-template-example)
-* code climate :: [![Code Climate](https://codeclimate.com/github/Nordstrom/chef-dk-template-example/badges/gpa.svg)](https://codeclimate.com/github/Nordstrom/chef-dk-template-example)
+* gem version :: [![Gem Version](https://badge.fury.io/rb/chef-gen-flavor-example.png)](http://badge.fury.io/rb/chef-gen-flavor-example)
+* build status :: [![Build Status](https://travis-ci.org/Nordstrom/chef-gen-flavor-example.png?branch=master)](https://travis-ci.org/Nordstrom/chef-gen-flavor-example)
+* code climate :: [![Code Climate](https://codeclimate.com/github/Nordstrom/chef-gen-flavor-example/badges/gpa.svg)](https://codeclimate.com/github/Nordstrom/chef-gen-flavor-example)
+* docs :: [![Inline docs](http://inch-ci.org/github/nordstrom/chef-gen-flavor-example.svg?branch=master)](http://inch-ci.org/github/nordstrom/chef-gen-flavor-example)
 
 ## DESCRIPTION
 
-An example plugin for [chef-dk-template-plugin](https://rubygems.org/gems/chef-dk-template-plugin).
+An example plugin for [chef-gen-flavors](https://rubygems.org/gems/chef-gen-flavors).
 
-This plugin makes use of most of the mixins available, and is meant as a
+This plugin makes use of most of the snippets available, and is meant as a
 reference implementation than for actual use. It demonstrates how to create
 a template plugin with tests and serve as a good example of how to get
 started writing your own templates for distribution.
 
 ## USAGE
 
-
 To see it in action:
 
-    chef gem install chef-dk-template-example
+    chef gem install chef-gen-flavor-example
     chef generate cookbook foo
 
 This should generate the following cookbook:
 
 ```
 $ chef generate cookbook foo
-using ChefDK template generator in /home/james/.chefdk/gem/ruby/2.1.0/gems/chef-dk-template-example-0.1.0/code_generator
+using ChefGen flavor in /home/james/.chefdk/gem/ruby/2.1.0/gems/chef-gen-flavor-example-0.1.0/code_generator
 Compiling Cookbooks...
 Recipe: code_generator::cookbook
   * directory[/home/james/foo/] action create
