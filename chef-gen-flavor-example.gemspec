@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
-# stub: chef-gen-flavor-example 0.2.0.20150514061744 ruby lib
+# stub: chef-gen-flavor-example 0.3.0.20150515152333 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "chef-gen-flavor-example"
-  s.version = "0.2.0.20150514061744"
+  s.version = "0.3.0.20150515152333"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["James FitzGibbon"]
-  s.date = "2015-05-14"
+  s.date = "2015-05-15"
   s.description = "An example plugin for [chef-gen-flavors](https://rubygems.org/gems/chef-gen-flavors).\n\nThis plugin makes use of most of the snippets available, and is meant as a\nreference implementation than for actual use. It demonstrates how to create\na template plugin with tests and serve as a good example of how to get\nstarted writing your own templates for distribution."
   s.email = ["james.i.fitzgibbon@nordstrom.com"]
   s.extra_rdoc_files = ["History.md", "Manifest.txt", "README.md"]
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<chef-gen-flavors>, ["~> 0.3"])
+      s.add_runtime_dependency(%q<chef-gen-flavors>, ["~> 0.4"])
       s.add_development_dependency(%q<rdoc>, ["~> 4.0"])
       s.add_development_dependency(%q<chef-dk>, ["~> 0.5"])
       s.add_development_dependency(%q<hoe>, ["~> 3.13"])
@@ -37,8 +37,9 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<simplecov>, ["~> 0.9"])
       s.add_development_dependency(%q<simplecov-console>, ["~> 0.2"])
       s.add_development_dependency(%q<yard>, ["~> 0.8"])
+      s.add_development_dependency(%q<aruba>, ["~> 0.6"])
     else
-      s.add_dependency(%q<chef-gen-flavors>, ["~> 0.3"])
+      s.add_dependency(%q<chef-gen-flavors>, ["~> 0.4"])
       s.add_dependency(%q<rdoc>, ["~> 4.0"])
       s.add_dependency(%q<chef-dk>, ["~> 0.5"])
       s.add_dependency(%q<hoe>, ["~> 3.13"])
@@ -52,9 +53,10 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<simplecov>, ["~> 0.9"])
       s.add_dependency(%q<simplecov-console>, ["~> 0.2"])
       s.add_dependency(%q<yard>, ["~> 0.8"])
+      s.add_dependency(%q<aruba>, ["~> 0.6"])
     end
   else
-    s.add_dependency(%q<chef-gen-flavors>, ["~> 0.3"])
+    s.add_dependency(%q<chef-gen-flavors>, ["~> 0.4"])
     s.add_dependency(%q<rdoc>, ["~> 4.0"])
     s.add_dependency(%q<chef-dk>, ["~> 0.5"])
     s.add_dependency(%q<hoe>, ["~> 3.13"])
@@ -68,5 +70,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<simplecov>, ["~> 0.9"])
     s.add_dependency(%q<simplecov-console>, ["~> 0.2"])
     s.add_dependency(%q<yard>, ["~> 0.8"])
+    s.add_dependency(%q<aruba>, ["~> 0.6"])
   end
 end
