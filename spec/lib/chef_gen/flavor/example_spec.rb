@@ -1,12 +1,10 @@
 require 'chef_gen/flavor/example'
 
 RSpec.describe ChefGen::Flavor::Example do
+  include ChefDKGeneratorContext
+  include DummyRecipe
+
   before do
-    @ctx = double('ChefDK generator context')
-    allow(@ctx).to receive(:cookbook_root).and_return('/nonexistent')
-    allow(@ctx).to receive(:cookbook_name).and_return('foo')
-    allow(ChefDK::Generator).to receive(:context).and_return(@ctx)
-    @recipe = double('Chef recipe').as_null_object
     @orig_stdout = $stdout
     $stdout = File.open(File::NULL, 'w')
   end
