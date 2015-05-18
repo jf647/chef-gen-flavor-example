@@ -13,14 +13,22 @@ An example plugin for [chef-gen-flavors](https://rubygems.org/gems/chef-gen-flav
 
 This plugin makes use of most of the snippets available, and is meant as a
 reference implementation than for actual use. It demonstrates how to create
-a template plugin with tests and serve as a good example of how to get
-started writing your own templates for distribution.
+a flavor with tests and serves as a good example of how to get
+started writing your own flavors for distribution.
+
+# INSTALLATION
+
+To install the latest public gem version:
+
+    chef gem install chef-gen-flavor-example
+
+To install from (possibly modified) source:
+
+    bundle
+    bundle exec rake install_gem
 
 ## USAGE
 
-To see it in action:
-
-    chef gem install chef-gen-flavor-example
     chef generate cookbook foo
 
 This should generate the following cookbook:
@@ -127,6 +135,23 @@ foo
                 │   └── default_spec.rb
                 └── spec_helper.rb
 ```
+
+## TESTING
+
+To test, run one of:
+
+    bundle exec rake style
+    bundle exec rake spec
+    bundle exec rake features
+
+The feature tests are written using Aruba, which is a CLI driver for Cucumber.
+It works off of the same feature files you may be used to using in Capybara for
+web app testing (though the steps are perforce quite different).
+
+The feature tests provide a good example of how to generate a cookbook of your
+flavor and then test the generated artifact.  For example, the test suite that comes
+with the example flavor tests that the Rake tasks can be listed, that the style and
+unit tests run cleanly, and that the kitchen suites can be listed.
 
 ## AUTHOR
 

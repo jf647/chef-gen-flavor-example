@@ -19,7 +19,7 @@ module ChefGen
       include ChefGen::Snippet::ExampleTemplate
 
       # the version of the gem
-      VERSION = '0.3.0'
+      VERSION = '0.4.0'
 
       class << self
         # :nocov:

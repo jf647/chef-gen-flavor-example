@@ -8,7 +8,7 @@ begin
     s.version = ChefGen::Flavor::Example::VERSION
     developer 'James FitzGibbon', 'james.i.fitzgibbon@nordstrom.com'
     license 'apache2'
-    extra_deps << ['chef-gen-flavors', '~> 0.4']
+    extra_deps << ['chef-gen-flavors', '~> 0.5']
     extra_dev_deps << ['chef-dk', '~> 0.5']
     extra_dev_deps << ['hoe', '~> 3.13']
     extra_dev_deps << ['hoe-gemspec', '~> 1.0']
@@ -87,9 +87,9 @@ rescue LoadError
   puts 'yard not available; disabling tasks'
 end
 
-# test is an alias for spec and features
+# test is an alias for testing all the things
 desc 'runs unit and feature tests'
-task test: [:spec, :features]
+task test: [:style, :spec, :features]
 
 # default is to test everything
 desc 'runs all tests'
