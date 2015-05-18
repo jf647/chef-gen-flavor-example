@@ -15,8 +15,10 @@ driver_config:
 
 provisioner:
   name: chef_zero
+<%% if proxy_vars.size > 0 %>
   client_rb:
 <%= kitchen_proxy_vars(4) %>
+<%% end %>
 
 platforms:
   - name: ubuntu-14.04

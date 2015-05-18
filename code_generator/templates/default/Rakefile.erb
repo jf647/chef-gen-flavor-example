@@ -1,6 +1,5 @@
 require 'foodcritic'
 require 'foodcritic/rake_task'
-require 'tailor/rake_task'
 require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 require 'kitchen/rake_tasks'
@@ -43,3 +42,11 @@ begin
 rescue LoadError
   puts 'test-kitchen initialization failed; disabling kitchen tasks'
 end
+
+# test is an alias for testing all the things except kitchen
+desc 'runs style and unit tests'
+task test: [:style, :spec]
+
+# default is to test everything
+desc 'runs all tests'
+task default: :test

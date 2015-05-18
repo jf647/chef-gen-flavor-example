@@ -1,8 +1,8 @@
 .rspec
 .rubocop.yml
 .travis.yml
+ARUBA_STEPS.md
 Gemfile
-Gemfile.lock
 Guardfile
 History.md
 LICENSE
@@ -31,6 +31,8 @@ code_generator/templates/default/spec_recipes_default_spec_rb.erb
 code_generator/templates/default/spec_spec_helper_rb.erb
 code_generator/templates/default/test_integration_default_serverspec_recipes_default_spec_rb.erb
 code_generator/templates/default/test_integration_default_serverspec_spec_helper_rb.erb
+features/generate.feature
+features/support/env.rb
 lib/chef_gen/flavor/example.rb
 spec/lib/chef_gen/flavor/example_spec.rb
 spec/spec_helper.rb
