@@ -8,7 +8,7 @@ begin
     s.version = ChefGen::Flavor::Example::VERSION
     developer 'James FitzGibbon', 'james.i.fitzgibbon@nordstrom.com'
     license 'apache2'
-    extra_deps << ['chef-gen-flavors', '~> 0.5']
+    extra_deps << ['chef-gen-flavors', '~> 0.7']
     extra_dev_deps << ['chef-dk', '~> 0.5']
     extra_dev_deps << ['hoe', '~> 3.13']
     extra_dev_deps << ['hoe-gemspec', '~> 1.0']
@@ -22,6 +22,7 @@ begin
     extra_dev_deps << ['simplecov-console', '~> 0.2']
     extra_dev_deps << ['yard', '~> 0.8']
     extra_dev_deps << ['aruba', '~> 0.6']
+    extra_dev_deps << ['rspec_junit_formatter', '~> 0.2']
   end
   # re-generate our gemspec before packaging
   task package: 'gem:spec'
