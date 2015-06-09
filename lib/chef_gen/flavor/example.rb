@@ -14,12 +14,15 @@ module ChefGen
       include ChefGen::Snippet::TestKitchen
       include ChefGen::Snippet::StandardIgnore
       include ChefGen::Snippet::StyleRubocop
+      include ChefGen::Snippet::StyleTailor
+      include ChefGen::Snippet::StyleFoodcritic
       include ChefGen::Snippet::GitInit
       include ChefGen::Snippet::ExampleFile
       include ChefGen::Snippet::ExampleTemplate
+      include ChefGen::Snippet::ResourceProvider
 
       # the version of the gem
-      VERSION = '0.4.0'
+      VERSION ||= '0.5.0'
 
       class << self
         # :nocov:
