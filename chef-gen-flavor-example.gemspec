@@ -1,18 +1,18 @@
 # -*- encoding: utf-8 -*-
-# stub: chef-gen-flavor-example 0.5.0.20150606161615 ruby lib
+# stub: chef-gen-flavor-example 0.5.0.20150609142215 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "chef-gen-flavor-example"
-  s.version = "0.5.0.20150606161615"
+  s.version = "0.5.0.20150609142215"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["James FitzGibbon"]
-  s.date = "2015-06-06"
+  s.date = "2015-06-09"
   s.description = "An example plugin for [chef-gen-flavors](https://rubygems.org/gems/chef-gen-flavors).\n\nThis plugin makes use of most of the snippets available, and is meant as a\nreference implementation than for actual use. It demonstrates how to create\na flavor with tests and serves as a good example of how to get\nstarted writing your own flavors for distribution."
   s.email = ["james.i.fitzgibbon@nordstrom.com"]
   s.extra_rdoc_files = ["History.md", "Manifest.txt", "README.md"]
-  s.files = [".rspec", ".rubocop.yml", ".travis.yml", "Gemfile", "Guardfile", "History.md", "LICENSE", "Manifest.txt", "README.md", "Rakefile", "chef-gen-flavor-example.gemspec", "circle.yml", "code_generator/files/default/files_default_example_conf", "code_generator/files/default/templates_default_example_conf_erb", "code_generator/libraries/kitchen_helper.rb", "code_generator/metadata.rb", "code_generator/recipes/cookbook.rb", "code_generator/templates/default/Berksfile.erb", "code_generator/templates/default/CHANGELOG_md.erb", "code_generator/templates/default/Gemfile.erb", "code_generator/templates/default/Guardfile.erb", "code_generator/templates/default/README_md.erb", "code_generator/templates/default/Rakefile.erb", "code_generator/templates/default/_kitchen_yml.erb", "code_generator/templates/default/_rspec.erb", "code_generator/templates/default/_rubocop_yml.erb", "code_generator/templates/default/metadata_rb.erb", "code_generator/templates/default/recipes_default_rb.erb", "code_generator/templates/default/spec_recipes_default_spec_rb.erb", "code_generator/templates/default/spec_spec_helper_rb.erb", "code_generator/templates/default/test_integration_default_serverspec_recipes_default_spec_rb.erb", "code_generator/templates/default/test_integration_default_serverspec_spec_helper_rb.erb", "features/generate.feature", "features/support/env.rb", "lib/chef_gen/flavor/example.rb", "spec/lib/chef_gen/flavor/example_spec.rb", "spec/spec_helper.rb"]
+  s.files = ["History.md", "LICENSE", "Manifest.txt", "README.md", "chef-gen-flavor-example.gemspec", "code_generator/metadata.rb", "code_generator/recipes/cookbook.rb", "code_generator_2/metadata.rb", "code_generator_2/recipes/cookbook.rb", "lib/chef_gen/flavor/example.rb", "lib/chef_gen/flavor/example2.rb"]
   s.homepage = "https://github.com/Nordstrom/chef-gen-flavor-example"
   s.licenses = ["apache2"]
   s.rdoc_options = ["--main", "README.md"]

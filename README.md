@@ -3,7 +3,7 @@
 * home :: https://github.com/Nordstrom/chef-gen-flavor-example
 * license :: [Apache2](http://www.apache.org/licenses/LICENSE-2.0)
 * gem version :: [![Gem Version](https://badge.fury.io/rb/chef-gen-flavor-example.png)](http://badge.fury.io/rb/chef-gen-flavor-example)
-* build status :: [![Build Status](https://travis-ci.org/Nordstrom/chef-gen-flavor-example.png?branch=master)](https://travis-ci.org/Nordstrom/chef-gen-flavor-example)
+* build status :: [![Circle CI](https://circleci.com/gh/Nordstrom/chef-gen-flavor-example.svg?style=svg)](https://circleci.com/gh/Nordstrom/chef-gen-flavor-example)
 * code climate :: [![Code Climate](https://codeclimate.com/github/Nordstrom/chef-gen-flavor-example/badges/gpa.svg)](https://codeclimate.com/github/Nordstrom/chef-gen-flavor-example)
 * docs :: [![Inline docs](http://inch-ci.org/github/nordstrom/chef-gen-flavor-example.svg?branch=master)](http://inch-ci.org/github/nordstrom/chef-gen-flavor-example)
 
