@@ -8,7 +8,7 @@ begin
     s.version = ChefGen::Flavor::Example::VERSION
     developer 'James FitzGibbon', 'james.i.fitzgibbon@nordstrom.com'
     license 'apache2'
-    extra_deps << ['chef-gen-flavors', '~> 0.7']
+    extra_deps << ['chef-gen-flavors', '~> 0.8']
     extra_dev_deps << ['chef-dk', '~> 0.5']
     extra_dev_deps << ['hoe', '~> 3.13']
     extra_dev_deps << ['hoe-gemspec', '~> 1.0']
