@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
-# stub: chef-gen-flavor-example 0.5.0.20150618143649 ruby lib
+# stub: chef-gen-flavor-example 0.5.0.20150716113354 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "chef-gen-flavor-example"
-  s.version = "0.5.0.20150618143649"
+  s.version = "0.5.0.20150716113354"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["James FitzGibbon"]
-  s.date = "2015-06-18"
+  s.date = "2015-07-16"
   s.description = "An example plugin for [chef-gen-flavors](https://rubygems.org/gems/chef-gen-flavors).\n\nThis plugin makes use of most of the snippets available, and is meant as a\nreference implementation than for actual use. It demonstrates how to create\na flavor with tests and serves as a good example of how to get\nstarted writing your own flavors for distribution."
   s.email = ["james.i.fitzgibbon@nordstrom.com"]
   s.extra_rdoc_files = ["History.md", "Manifest.txt", "README.md"]
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<simplecov>, ["~> 0.9"])
       s.add_development_dependency(%q<simplecov-console>, ["~> 0.2"])
       s.add_development_dependency(%q<yard>, ["~> 0.8"])
-      s.add_development_dependency(%q<aruba>, ["~> 0.6"])
+      s.add_development_dependency(%q<aruba>, ["~> 0.6.2"])
       s.add_development_dependency(%q<rspec_junit_formatter>, ["~> 0.2"])
     else
       s.add_dependency(%q<chef-gen-flavors>, ["~> 0.8"])
@@ -54,7 +54,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<simplecov>, ["~> 0.9"])
       s.add_dependency(%q<simplecov-console>, ["~> 0.2"])
       s.add_dependency(%q<yard>, ["~> 0.8"])
-      s.add_dependency(%q<aruba>, ["~> 0.6"])
+      s.add_dependency(%q<aruba>, ["~> 0.6.2"])
       s.add_dependency(%q<rspec_junit_formatter>, ["~> 0.2"])
     end
   else
@@ -72,7 +72,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<simplecov>, ["~> 0.9"])
     s.add_dependency(%q<simplecov-console>, ["~> 0.2"])
     s.add_dependency(%q<yard>, ["~> 0.8"])
-    s.add_dependency(%q<aruba>, ["~> 0.6"])
+    s.add_dependency(%q<aruba>, ["~> 0.6.2"])
     s.add_dependency(%q<rspec_junit_formatter>, ["~> 0.2"])
   end
 end
