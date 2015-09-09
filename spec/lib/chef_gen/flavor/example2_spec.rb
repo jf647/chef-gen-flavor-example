@@ -21,8 +21,8 @@ RSpec.describe ChefGen::Flavor::Example2 do
   ).each do |dirname|
     it "should not create the directory #{dirname}" do
       expect(@recipe).not_to receive(:directory).with(/#{dirname}$/)
-      template = ChefGen::Flavor::Example2.new(@recipe)
-      template.generate
+      flavor = ChefGen::Flavor::Example2.new(type: 'cookbook', recipe: @recipe)
+      flavor.declare_resources
     end
   end
 
@@ -32,8 +32,8 @@ RSpec.describe ChefGen::Flavor::Example2 do
   ).each do |filename|
     it "should not write the file #{filename}" do
       expect(@recipe).not_to receive(:cookbook_file).with(/#{filename}$/)
-      template = ChefGen::Flavor::Example2.new(@recipe)
-      template.generate
+      flavor = ChefGen::Flavor::Example2.new(type: 'cookbook', recipe: @recipe)
+      flavor.declare_resources
     end
   end
 end

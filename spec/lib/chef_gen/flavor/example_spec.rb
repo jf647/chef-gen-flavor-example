@@ -30,8 +30,8 @@ RSpec.describe ChefGen::Flavor::Example do
   ).each do |dirname|
     it "should create the directory #{dirname}" do
       expect(@recipe).to receive(:directory).with(/#{dirname}$/)
-      template = ChefGen::Flavor::Example.new(@recipe)
-      template.generate
+      flavor = ChefGen::Flavor::Example.new(type: 'cookbook', recipe: @recipe)
+      flavor.declare_resources
     end
   end
 
@@ -55,8 +55,8 @@ RSpec.describe ChefGen::Flavor::Example do
   ).each do |filename|
     it "should generate the file #{filename} from a template" do
       expect(@recipe).to receive(:template).with(/#{filename}$/)
-      template = ChefGen::Flavor::Example.new(@recipe)
-      template.generate
+      flavor = ChefGen::Flavor::Example.new(type: 'cookbook', recipe: @recipe)
+      flavor.declare_resources
     end
   end
 
@@ -66,21 +66,21 @@ RSpec.describe ChefGen::Flavor::Example do
   ).each do |filename|
     it "should write the file #{filename}" do
       expect(@recipe).to receive(:cookbook_file).with(/#{filename}$/)
-      template = ChefGen::Flavor::Example.new(@recipe)
-      template.generate
+      flavor = ChefGen::Flavor::Example.new(type: 'cookbook', recipe: @recipe)
+      flavor.declare_resources
     end
   end
 
   it 'should write a chefignore and .gitignore' do
     expect(@recipe).to receive(:file).with(/chefignore$/)
     expect(@recipe).to receive(:file).with(/\.gitignore$/)
-    template = ChefGen::Flavor::Example.new(@recipe)
-    template.generate
+    flavor = ChefGen::Flavor::Example.new(type: 'cookbook', recipe: @recipe)
+    flavor.declare_resources
   end
 
   it 'should display the actions taken' do
     expect(@recipe).to receive(:ruby_block).with('report_actions_taken')
-    template = ChefGen::Flavor::Example.new(@recipe)
-    template.generate
+    flavor = ChefGen::Flavor::Example.new(type: 'cookbook', recipe: @recipe)
+    flavor.declare_resources
   end
 end

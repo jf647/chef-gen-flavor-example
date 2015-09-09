@@ -3,9 +3,9 @@ LICENSE
 Manifest.txt
 README.md
 chef-gen-flavor-example.gemspec
-code_generator/metadata.rb
-code_generator/recipes/cookbook.rb
-code_generator_2/metadata.rb
-code_generator_2/recipes/cookbook.rb
 lib/chef_gen/flavor/example.rb
 lib/chef_gen/flavor/example2.rb
+shared/flavor/example/metadata.rb
+shared/flavor/example/recipes/cookbook.rb
+shared/flavor/example2/metadata.rb
+shared/flavor/example2/recipes/cookbook.rb
