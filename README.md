@@ -1,20 +1,26 @@
 # chef-gen-flavor-example
 
-* home :: https://github.com/Nordstrom/chef-gen-flavor-example
+* home :: https://github.com/jf647/chef-gen-flavor-example
 * license :: [Apache2](http://www.apache.org/licenses/LICENSE-2.0)
 * gem version :: [![Gem Version](https://badge.fury.io/rb/chef-gen-flavor-example.png)](http://badge.fury.io/rb/chef-gen-flavor-example)
-* build status :: [![Circle CI](https://circleci.com/gh/Nordstrom/chef-gen-flavor-example.svg?style=svg)](https://circleci.com/gh/Nordstrom/chef-gen-flavor-example)
-* code climate :: [![Code Climate](https://codeclimate.com/github/Nordstrom/chef-gen-flavor-example/badges/gpa.svg)](https://codeclimate.com/github/Nordstrom/chef-gen-flavor-example)
-* docs :: [![Inline docs](http://inch-ci.org/github/nordstrom/chef-gen-flavor-example.svg?branch=master)](http://inch-ci.org/github/nordstrom/chef-gen-flavor-example)
+* build status :: [![Circle CI](https://circleci.com/gh/jf647/chef-gen-flavor-example.svg?style=svg)](https://circleci.com/gh/jf647/chef-gen-flavor-example)
+* code climate :: [![Code Climate](https://codeclimate.com/github/jf647/chef-gen-flavor-example/badges/gpa.svg)](https://codeclimate.com/github/jf647/chef-gen-flavor-example)
+* docs :: [![Inline docs](http://inch-ci.org/github/jf647/chef-gen-flavor-example.svg?branch=master)](http://inch-ci.org/github/jf647/chef-gen-flavor-example)
 
 ## DESCRIPTION
 
 An example plugin for [chef-gen-flavors](https://rubygems.org/gems/chef-gen-flavors).
 
-This plugin makes use of most of the snippets available, and is meant as a
-reference implementation than for actual use. It demonstrates how to create
-a flavor with tests and serves as a good example of how to get
-started writing your own flavors for distribution.
+This plugin makes use of all the snippets provided by
+chef-gen-flavor-base, is meant as a reference implementation than for
+actual use. It demonstrates how to create a flavor with tests and serves
+as a good example of how to get started writing your own flavors for
+distribution.
+
+There are two flavors in this gem:
+
+* example: includes all the snippets in their default form
+* example2: inherits from example but removes ExampleFile and ExampleTemplate from the list of snippets to use
 
 # INSTALLATION
 
@@ -25,7 +31,8 @@ To install the latest public gem version:
 To install from (possibly modified) source:
 
     bundle
-    bundle exec rake install_gem
+    bundle exec rake package
+    chef gem install pkg/chef-gen-flavor-example-X.Y.Z.gem
 
 ## USAGE
 
@@ -35,7 +42,7 @@ This should generate the following cookbook:
 
 ```
 $ chef generate cookbook foo
-using ChefGen flavor in /home/james/.chefdk/gem/ruby/2.1.0/gems/chef-gen-flavor-example-0.1.0/code_generator
+using ChefGen flavor 'example'
 Compiling Cookbooks...
 Recipe: code_generator::cookbook
   * directory[/home/james/foo/] action create
@@ -155,11 +162,13 @@ unit tests run cleanly, and that the kitchen suites can be listed.
 
 ## AUTHOR
 
-James FitzGibbon - james.i.fitzgibbon@nordstrom.com - Nordstrom Inc.
+[James FitzGibbon](https://github.com/jf647)
 
 ## LICENSE
 
 Copyright 2015 Nordstrom, Inc.
+
+Copyright 2015 James FitzGibbon
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
 use this file except in compliance with the License. You may obtain a copy

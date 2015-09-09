@@ -5,40 +5,21 @@ module ChefGen
   # a pluggable framework for distributing templates as ruby gems
   module Flavor
     # a flavor that inherits from ChefGen::Flavor::Example
-    class Example2 < Example
-      # the version of the gem
-      VERSION ||= '0.5.0'
+    class Example2 < ChefGen::Flavor::Example
+      NAME = 'example2'
+      DESC = 'remove example files'
+      VERSION = '0.6.0'
 
-      class << self
-        # :nocov:
-        def description
-          'Example 2 cookbook template'
-        end
-        # :nocov:
-
-        def code_generator_path(classfile)
-          File.expand_path(
-            File.join(
-              classfile,
-              '..', '..', '..', '..',
-              'code_generator_2'
-            )
-          )
+      def initialize(temp_path: nil, type: nil, recipe: nil)
+        super
+        # remove ExampleFile and ExampleTemplate snippets
+        @snippets.reject! do |e|
+          e == ChefGen::Snippet::ExampleFile || e == ChefGen::Snippet::ExampleTemplate
         end
       end
 
-      # hook after run_snippets to remove examples files
-      def after_run_snippets
-        toremove = [
-          'files',
-          File.join('files', 'default'),
-          File.join('files', 'default', 'example.conf'),
-          'templates',
-          File.join('templates', 'default'),
-          File.join('templates', 'default', 'example.conf.erb')
-        ]
-        @directories.reject! { |e| toremove.include? e }
-        @files_if_missing.reject! { |e| toremove.include? e }
+      do_add_content do
+        @tocopy << [File.expand_path(File.join(static_content_path(__FILE__))) + '/.']
       end
     end
   end

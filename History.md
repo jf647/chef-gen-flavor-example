@@ -1,5 +1,13 @@
 # Changelog for chef-gen-flavor-example
 
+## 0.6.0
+
+* update for compatibility with chef-gen-flavor-base 0.9.0
+
+## 0.5.0
+
+* pin aruba to older version
+
 ## 0.4.0
 
 * use the step definitions provided by chef-gen-flavors v0.5
