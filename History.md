@@ -1,5 +1,9 @@
 # Changelog for chef-gen-flavor-example
 
+## 0.6.1
+
+* update for chef-gen-flavor-base 0.9.1
+
 ## 0.6.0
 
 * update for compatibility with chef-gen-flavor-base 0.9.0

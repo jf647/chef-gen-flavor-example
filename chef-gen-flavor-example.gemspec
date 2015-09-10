@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
-# stub: chef-gen-flavor-example 0.6.0.20150909153225 ruby lib
+# stub: chef-gen-flavor-example 0.6.1.20150910101149 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "chef-gen-flavor-example"
-  s.version = "0.6.0.20150909153225"
+  s.version = "0.6.1.20150910101149"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["James FitzGibbon"]
-  s.date = "2015-09-09"
+  s.date = "2015-09-10"
   s.description = "An example plugin for [chef-gen-flavors](https://rubygems.org/gems/chef-gen-flavors).\n\nThis plugin makes use of all the snippets provided by\nchef-gen-flavor-base, is meant as a reference implementation than for\nactual use. It demonstrates how to create a flavor with tests and serves\nas a good example of how to get started writing your own flavors for\ndistribution.\n\nThere are two flavors in this gem:\n\n* example: includes all the snippets in their default form\n* example2: inherits from example but removes ExampleFile and ExampleTemplate from the list of snippets to use"
   s.email = ["james.i.fitzgibbon@jf647.com"]
   s.extra_rdoc_files = ["History.md", "Manifest.txt", "README.md"]
