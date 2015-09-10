@@ -8,7 +8,7 @@ module ChefGen
     class Example2 < ChefGen::Flavor::Example
       NAME = 'example2'
       DESC = 'remove example files'
-      VERSION = '0.6.0'
+      VERSION = '0.6.1'
 
       def initialize(temp_path: nil, type: nil, recipe: nil)
         super
@@ -19,7 +19,7 @@ module ChefGen
       end
 
       do_add_content do
-        @tocopy << [File.expand_path(File.join(static_content_path(__FILE__))) + '/.']
+        @tocopy << [File.expand_path(File.join(static_content_path(__FILE__, 'example2'))) + '/.']
       end
     end
   end
