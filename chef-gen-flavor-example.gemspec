@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
-# stub: chef-gen-flavor-example 0.6.1.20150910101149 ruby lib
+# stub: chef-gen-flavor-example 0.6.1.20150910102445 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "chef-gen-flavor-example"
-  s.version = "0.6.1.20150910101149"
+  s.version = "0.6.1.20150910102445"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
